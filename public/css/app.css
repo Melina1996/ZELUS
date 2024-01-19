@@ -13587,7 +13587,7 @@ main .my-container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 main .my-container .header {
   display: flex;
@@ -13598,10 +13598,12 @@ main .my-container .header {
 main .my-container .header h1, main .my-container .header .h1 {
   margin: 0;
   padding: 0;
+  color: white;
 }
 main .my-container .header h3, main .my-container .header .h3 {
   margin: 0;
   padding: 0;
+  color: white;
 }
 main .my-container .big-glass {
   width: 200px;
@@ -13610,6 +13612,19 @@ main .my-container .big-glass {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   border: #164dc0 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .my-container .big-glass h1, main .my-container .big-glass .h1 {
+  color: #164dc0;
+  text-align: center;
+  font-size: 30px;
+}
+main .my-container .sub-header {
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 main .my-container .small-glasses {
   display: flex;
