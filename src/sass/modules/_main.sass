@@ -33,6 +33,8 @@ main
             border-bottom-left-radius: 40px
             border-bottom-right-radius: 40px
             border: #164dc0 solid 2px
+            position: relative
+            overflow: hidden
 
             display: flex
             justify-content: center
@@ -41,6 +43,157 @@ main
                 color: #164dc0
                 text-align: center
                 font-size: 30px
+            .glass-fill
+                position: absolute 
+                width: 100%
+                height: 0
+                border-bottom-left-radius: 40px
+                border-bottom-right-radius: 40px
+                bottom: 0
+                text-align: center
+                z-index: 1
+                background-color: black
+                transition: 3s
+
+            // .glass-fill-two
+            //     z-index: 2
+            //     position: absolute 
+            //     width: 100%
+            //     height: 100%
+            //     border-bottom-left-radius: 40px
+            //     border-bottom-right-radius: 40px
+            //     bottom: 0
+            //     width: 100%
+            //     padding: 15px
+            //     text-align: center
+            //     color: white
+            //     background-color: black
+            //     animation: moveTwo 3s forwards ease
+            //     @keyframes moveTwo 
+            //         from
+            //             transform: translateY(100%)
+            //         to
+            //             transform: translateY(75%)
+            // .glass-fill-three
+            //     z-index: 3
+            //     position: absolute
+            //     width: 100%
+            //     height: 100%
+            //     border-bottom-left-radius: 40px
+            //     border-bottom-right-radius: 40px
+            //     bottom: 0
+            //     width: 100%
+            //     padding: 15px
+            //     text-align: center
+            //     color: white
+            //     background-color: black
+            //     animation: moveThree 3s forwards ease
+            //     @keyframes moveThree 
+            //         from
+            //             transform: translateY(100%)
+            //         to
+            //             transform: translateY(62.5%)
+            // .glass-fill-four
+            //     z-index: 4
+            //     position: absolute
+            //     width: 100%
+            //     height: 100%
+            //     border-bottom-left-radius: 40px
+            //     border-bottom-right-radius: 40px
+            //     bottom: 0
+            //     width: 100%
+            //     padding: 15px
+            //     text-align: center
+            //     color: white
+            //     background-color: black
+            //     animation: moveFour 3s forwards ease
+            //     @keyframes moveFour 
+            //         from
+            //             transform: translateY(100%)
+            //         to
+            //             transform: translateY(50%)
+            // .glass-fill-five
+            //     z-index: 5
+            //     position: absolute
+            //     width: 100%
+            //     height: 100%
+            //     border-bottom-left-radius: 40px
+            //     border-bottom-right-radius: 40px
+            //     bottom: 0
+            //     width: 100%
+            //     padding: 15px
+            //     text-align: center
+            //     color: white
+            //     background-color: black
+            //     animation: moveFive 3s forwards ease
+            //     @keyframes moveFive 
+            //         from
+            //             transform: translateY(100%)
+            //         to
+            //             transform: translateY(37.5%)
+            // .glass-fill-six
+            //     z-index: 6
+            //     position: absolute
+            //     width: 100%
+            //     height: 100%
+            //     border-bottom-left-radius: 40px
+            //     border-bottom-right-radius: 40px
+            //     bottom: 0
+            //     width: 100%
+            //     padding: 15px
+            //     text-align: center
+            //     color: white
+            //     background-color: black
+            //     animation: moveSix 3s forwards ease
+            //     @keyframes moveSix
+            //         from
+            //             transform: translateY(100%)
+            //         to
+            //             transform: translateY(25%)
+            // .glass-fill-seven
+            //     z-index: 7
+            //     position: absolute
+            //     width: 100%
+            //     height: 100%
+            //     border-bottom-left-radius: 40px
+            //     border-bottom-right-radius: 40px
+            //     bottom: 0
+            //     width: 100%
+            //     padding: 15px
+            //     text-align: center
+            //     color: white
+            //     background-color: black
+            //     animation: moveSeven 3s forwards ease
+            //     @keyframes moveSeven
+            //         from
+            //             transform: translateY(100%)
+            //         to
+            //             transform: translateY(12.5%)
+            // .glass-fill-eight
+            //     z-index: 8
+            //     position: absolute
+            //     width: 100%
+            //     height: 100%
+            //     border-bottom-left-radius: 40px
+            //     border-bottom-right-radius: 40px
+            //     bottom: 0
+            //     width: 100%
+            //     padding: 15px
+            //     text-align: center
+            //     color: white
+            //     background-color: black
+            //     animation: moveEight 3s forwards ease
+            //     @keyframes moveEight
+            //         from
+            //             transform: translateY(100%)
+            //         to
+            //             transform: translateY(0%)
+
+
+                    
+                
+            // .big-glass:hover
+                // transform: translateY(100%) //text enters card, play around with values// 
         .sub-header
             color: white
             margin: 0
@@ -71,6 +224,8 @@ main
                         margin: 0
                         padding: 0
                         text-align: center
+                .change-color
+                    background-color: green
                 .used-glass
                     background-color: #69b2f7
                     color: white

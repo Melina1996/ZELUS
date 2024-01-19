@@ -13612,6 +13612,8 @@ main .my-container .big-glass {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   border: #164dc0 solid 2px;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13620,6 +13622,18 @@ main .my-container .big-glass h1, main .my-container .big-glass .h1 {
   color: #164dc0;
   text-align: center;
   font-size: 30px;
+}
+main .my-container .big-glass .glass-fill {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  bottom: 0;
+  text-align: center;
+  z-index: 1;
+  background-color: black;
+  transition: 3s;
 }
 main .my-container .sub-header {
   color: white;
@@ -13654,6 +13668,9 @@ main .my-container .small-glasses .row-glasses .my-glass p {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+main .my-container .small-glasses .row-glasses .change-color {
+  background-color: green;
 }
 main .my-container .small-glasses .row-glasses .used-glass {
   background-color: #69b2f7;
