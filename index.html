@@ -5,69 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     
     <title>Document</title>
 </head>
 
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#69b2f7" fill-opacity="1" d="M0,32L20,26.7C40,21,80,11,120,10.7C160,11,200,21,240,42.7C280,64,320,96,360,138.7C400,181,440,235,480,245.3C520,256,560,224,600,197.3C640,171,680,149,720,165.3C760,181,800,235,840,234.7C880,235,920,181,960,144C1000,107,1040,85,1080,112C1120,139,1160,213,1200,208C1240,203,1280,117,1320,85.3C1360,53,1400,75,1420,85.3L1440,96L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
     <main>
-
         <div class="my-container">
             <div class="header">
-                <h1>Drink Water</h1>
-                <h3>Goal: 2 Liters</h3>
+                <h1 class="my-title">Fill your fish tank!</h1>
+                <h2>Before we start: How would you like to call your fish?</h2>
+                <input type="text" placeholder="Put your name here...">
+                <h3>Goal: 8 liters</h3>
             </div>
 
             <div class="big-glass">
-                <h1 id="remaining">2L<br>remaining</h1>
+                <h1 id="remaining">2 liters<br>remaining</h1>
                 <p id="sub-title"></p>
                 <div class="glass-fill">
                     <p id="count"></p>
+                    <i class="fa-solid fa-fish-fins hide"></i>
                 </div>
             </div>
 
-            <p class="sub-header">Select how many glasses of water you drank today!</p>
+            <p class="sub-header">Select the containers to fill up your fish tank!</p>
             
             <div class="small-glasses">
 
-                    <!-- <div class="my-glass" data-pixel="37.5px" percentage = "12.5%" remaining = "1.75l" id="first-glass" top-one="120px" top-two="150px" textP="remaining">
-                        <p>250 ml</p>
+                    <div class="my-glass" data-pixel="37.5px" percentage = "12.5%" remaining = "7l" id="first-glass" top-one="120px" top-two="150px" textP="remaining" index="0">
+                        <p>1L</p>
                     </div>
-                    <div class="my-glass" data-pixel="75px" percentage = "25%" remaining = "1.5l" id="second-glass" top-one="120px" top-two="150px" textP="remaining">
-                        <p>250 ml</p>
+                    <div class="my-glass" data-pixel="75px" percentage = "25%" remaining = "6l" id="second-glass" top-one="100px" top-two="130px" textP="remaining" index="1">
+                        <p>1L</p>
                     </div>
-                    <div class="my-glass" data-pixel="112.5px" percentage = "37.5%" remaining = "1.25l" id="third-glass" top-one="120px" top-two="150px" textP="remaining">
-                        <p>250 ml</p>
+                    <div class="my-glass" data-pixel="112.5px" percentage = "37.5%" remaining = "5l" id="third-glass" top-one="80px" top-two="110px" textP="remaining" index="2">
+                        <p>1L</p>
                     </div>
-                    <div class="my-glass" data-pixel="150px" percentage = "50%" remaining = "1l" id="fourth-glass" top-one="60px" top-two="90px" textP="remaining">
-                        <p>250 ml</p>
+                    <div class="my-glass" data-pixel="150px" percentage = "50%" remaining = "4l" id="fourth-glass" top-one="60px" top-two="90px" textP="remaining" index="3">
+                        <p>1L</p>
                     </div>
-
-                    <div class="my-glass" data-pixel="187.5px" percentage = "62.5%" remaining = "0.75l" id="fifth-glass" top-one="40px" top-two="70px" textP="remaining">
-                        <p>250 ml</p>
+                    <div class="my-glass" data-pixel="187.5px" percentage = "62.5%" remaining = "3l" id="fifth-glass" top-one="40px" top-two="70px" textP="remaining" index="4">
+                        <p>1L</p>
                     </div>
-                    <div class="my-glass" data-pixel="225px" percentage = "75%" remaining = "0.5l" id="sixth-glass" top-one="15px" top-two="45px" textP="remaining">
-                        <p>250 ml</p>
+                    <div class="my-glass" data-pixel="225px" percentage = "75%" remaining = "2l" id="sixth-glass" top-one="15px" top-two="45px" textP="remaining">
+                        <p>1L</p>
                     </div>
-                    <div class="my-glass" data-pixel="262.5px" percentage = "87.5%" remaining = "0.25l" id="seventh-glass" top-one="5px" top-two="10px" textP="">
-                        <p>250 ml</p>
+                    <div class="my-glass" data-pixel="262.5px" percentage = "87.5%" remaining = "1l" id="seventh-glass" top-one="0px" top-two="10px" textP="">
+                        <p>1L</p>
                     </div>
                     <div class="my-glass" data-pixel="300px" percentage = "100%" id="eight-glass" top-one="60px" top-two="90px" textP="">
-                        <p>250 ml</p>
-                    </div> -->
+                        <p>1L</p>
+                    </div>
 
             </div>
+            <button><p>Empty the tank</p></button>
+
 
         </div>
-
     </main>  
 
 
     <footer>
      
     </footer>
-
-
     <!-- link the js sheet  -->
     <script src="./public/js/main.js"></script> 
     <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script> 
