@@ -18,23 +18,33 @@ let myEightGlass = document.querySelector("#eight-glass")
 
 let myDiv = document.querySelector(".glass-fill")
 
+let remaining = document.querySelector("#remaining")
+
+let countLiters = document.querySelector("#count")
+
+let subTitle = document.querySelector("#sub-title")
+
 allGlasses = document.querySelectorAll(".my-glass")
 
 for (let i = 0; i < allGlasses.length; i++) {
   allGlasses[i].addEventListener("click",()=>{
-    myDiv.style.height = allGlasses[i].getAttribute("data-target")
-    for (let y = 0; y <= i; y++) {
-      console.log(allGlasses[y])
-      if(allGlasses[y].classList.contains("change-color") == false){
-      // for (let index = 0; index < array.length; index++) {
-      //   const element = array[index];
-        //brauche ein Loop von dem geklicketn bis ersten Glas um die Farbe anzuwenden oder nicht 
-      allGlasses[y].classList.add("change-color")
-    } else if(allGlasses[y].classList.contains("change-color") == true){
-      //muss removing auf erstes Glas bis aktuelles anweden
-      allGlasses[y].classList.remove("change-color")
+    myDiv.style.height = allGlasses[i].getAttribute("data-pixel")
+
+    countLiters.innerText = allGlasses[i].getAttribute("percentage")
+
+    remaining.style.fontSize = "30px"
+    remaining.style.top = allGlasses[i].getAttribute("top-one")
+    remaining.innerText = allGlasses[i].getAttribute("remaining")
+
+    subTitle.innerText = allGlasses[i].getAttribute("textP")
+    subTitle.style.top = allGlasses[i].getAttribute("top-two")
+    
+
+    for(let i = 0; i < allGlasses.length; i++){
+      allGlasses[i].classList.remove("change-color")
     }
+    for(let y = 0; y<=i;y++){
+      allGlasses[y].classList.add("change-color")
     }
   })
 }
-
