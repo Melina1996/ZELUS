@@ -13,7 +13,7 @@ let subTitle = document.querySelector("#sub-title")
 
 let input = document.querySelector("input")
 
-let fish = document.querySelector(".fa-fish-fins")
+let fish = document.querySelector(".my-fish")
 
 let myBtn = document.querySelector("button")
 
@@ -60,7 +60,10 @@ for (let i = 0; i < allGlasses.length; i++) {
     console.log(inputValue)
     //if 8th glass is clicked: change text of header 
     if(allGlasses[i].id == "eight-glass"){
-      title.innerText = `Yeah, look, your friend ${inputValue} is happy!`
+      title.innerHTML = `Good job! Look how happy your friend <span>${inputValue}</span> is!`
+      //to change color of fish's name
+      let span = document.querySelector("span")
+      span.style.color = "black"
     }
   })
 }

@@ -11989,10 +11989,6 @@ main .my-container .big-glass .glass-fill {
   align-items: center;
   flex-direction: column;
 }
-main .my-container .big-glass .glass-fill .fa-fish-fins {
-  font-size: 80px;
-  color: black;
-}
 main .my-container .big-glass .glass-fill .hide {
   display: none;
 }
