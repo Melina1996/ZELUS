@@ -71,7 +71,7 @@ for (let i = 0; i < allGlasses.length; i++) {
 //integrated a button to reset everything
 myBtn.addEventListener("click",()=>{
   myDiv.style.height = "0px"
-  remaining.innerHTML = "2 liters<br>remaining"
+  remaining.innerHTML = "8 liters<br>remaining"
   remaining.style.top = "120px"
   subTitle.innerText = ""
   countLiters.innerText = ""
